@@ -965,7 +965,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
