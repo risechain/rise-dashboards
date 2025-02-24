@@ -46,7 +46,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -98,7 +98,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "exemplar": false,
@@ -116,7 +116,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -168,7 +168,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "exemplar": false,
@@ -186,7 +186,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -238,7 +238,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "exemplar": false,
@@ -256,7 +256,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -308,7 +308,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "exemplar": false,
@@ -326,7 +326,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -378,7 +378,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "exemplar": false,
@@ -396,7 +396,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -448,7 +448,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "exemplar": false,
@@ -480,7 +480,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "Tracks the entries, byte size, failed inserts and file deletes of the blob store",
         "fieldConfig": {
@@ -563,7 +563,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -579,7 +579,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -596,7 +596,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -613,7 +613,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -634,7 +634,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "Tracks a heuristic of the memory footprint of the various transaction pool sub-pools",
         "fieldConfig": {
@@ -717,7 +717,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_transaction_pool_basefee_pool_size_bytes{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -728,7 +728,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_transaction_pool_pending_pool_size_bytes{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -740,7 +740,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_transaction_pool_queued_pool_size_bytes{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -752,7 +752,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_transaction_pool_blob_pool_size_bytes{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -767,7 +767,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "Transaction pool maintenance metrics",
         "fieldConfig": {
@@ -875,7 +875,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -891,7 +891,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -908,7 +908,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -925,7 +925,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -946,7 +946,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "Tracks the number of transactions in the various transaction pool sub-pools",
         "fieldConfig": {
@@ -1028,7 +1028,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_transaction_pool_basefee_pool_transactions{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -1039,7 +1039,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_transaction_pool_pending_pool_transactions{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -1051,7 +1051,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_transaction_pool_queued_pool_transactions{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -1063,7 +1063,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_transaction_pool_blob_pool_transactions{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -1078,7 +1078,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "Tracks the number of transactions per second that are inserted and removed from the transaction pool, as well as the number of invalid transactions per second.\n\nBad transactions are a subset of invalid transactions, these will never be successfully imported. The remaining invalid transactions have a chance of being imported, for example transactions with nonce gaps.\n\n",
         "fieldConfig": {
@@ -1174,7 +1174,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1189,7 +1189,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1205,7 +1205,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1221,7 +1221,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1242,7 +1242,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "Number of transactions about to be imported into the pool.",
         "fieldConfig": {
@@ -1324,7 +1324,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_pending_pool_imports{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -1340,7 +1340,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "Tracks the number of incoming transaction messages in the channel from the network to the transaction pool.\n\nMempool messages sent over this channel are `GetPooledTransactions` requests, `NewPooledTransactionHashes` announcements (gossip), and `Transactions` (gossip)\n\nTx - `NetworkManager`\n\\nRx - `TransactionsManager`",
         "fieldConfig": {
@@ -1447,7 +1447,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "rate(reth_network_pool_transactions_messages_sent_total{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}[$__rate_interval])",
@@ -1460,7 +1460,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "rate(reth_network_pool_transactions_messages_received_total{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}[$__rate_interval])",
@@ -1472,7 +1472,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "code",
             "expr": "reth_network_pool_transactions_messages_sent_total{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"} - reth_network_pool_transactions_messages_received_total{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -1488,7 +1488,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "Measures the message send rate (MPS) for queued outgoing messages. Outgoing messages are added to the queue before being sent to other peers, and this metric helps track the rate of message dispatch.",
         "fieldConfig": {
@@ -1570,7 +1570,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1590,7 +1590,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "All Transactions metrics",
         "fieldConfig": {
@@ -1696,7 +1696,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1712,7 +1712,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1729,7 +1729,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1746,7 +1746,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1767,7 +1767,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "Egress RLPx capability traffic (default only `eth` capability)\n\nDropped - session channels are bounded, if there's no capacity, the message will be dropped.",
         "fieldConfig": {
@@ -1849,7 +1849,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1869,7 +1869,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "Total number of times a transaction is sent/announced that is already in the local pool.\n\nThis reflects the redundancy in the mempool.",
         "fieldConfig": {
@@ -1951,7 +1951,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1968,7 +1968,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1989,7 +1989,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "Currently active outgoing GetPooledTransactions requests.",
         "fieldConfig": {
@@ -2070,7 +2070,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_inflight_transaction_requests{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -2086,7 +2086,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "Duration of one call to poll `TransactionsManager` future, and its nested function calls.\n\nNetwork Events - stream peer session updates from `NetworkManager`;\nTransaction Events - stream txns gossip from `NetworkManager`;\nPending Transactions - stream hashes of txns successfully inserted into pending set in `TransactionPool`;\nPending Pool Imports - flush txns to pool from `TransactionsManager`;\nFetch Events - stream fetch txn events (success case wraps a tx) from `TransactionFetcher`;\nFetch Pending Hashes - search for hashes announced by an idle peer in cache for hashes pending fetch;\n(Transactions Commands - stream commands from testnet to fetch/serve/propagate txns)\n",
         "fieldConfig": {
@@ -2168,7 +2168,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -2185,7 +2185,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -2202,7 +2202,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -2220,7 +2220,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -2237,7 +2237,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -2254,7 +2254,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -2271,7 +2271,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -2288,7 +2288,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -2309,7 +2309,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "",
         "fieldConfig": {
@@ -2390,7 +2390,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "code",
@@ -2406,7 +2406,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "code",
@@ -2423,7 +2423,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "code",
             "expr": "sum(reth_network_hashes_inflight_transaction_requests{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}) + sum(reth_network_hashes_pending_fetch{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"})",
@@ -2440,7 +2440,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "Durations of one call to poll `NetworkManager` future, and its nested function calls.\n\nNetwork Handle Message - stream network handle messages from `TransactionsManager`;\nSwarm Events - stream transaction gossip from `Swarm`",
         "fieldConfig": {
@@ -2522,7 +2522,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -2539,7 +2539,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -2556,7 +2556,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -2577,7 +2577,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "Frequency of a peer sending a transaction that has already been marked as seen by that peer. This could for example be the case if a transaction is sent/announced to the peer at the same time that the peer sends/announces the same transaction to us.\n\nThis reflects the latency in the mempool.",
         "fieldConfig": {
@@ -2659,7 +2659,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -2676,7 +2676,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -2697,7 +2697,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "Number of all transactions of all sub-pools by type",
         "fieldConfig": {
@@ -2779,7 +2779,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "code",
@@ -2796,7 +2796,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "code",
@@ -2813,7 +2813,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "code",
@@ -2830,7 +2830,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "code",
@@ -2847,7 +2847,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "code",
@@ -2868,7 +2868,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "Duration of one call to `TransactionFetcher::on_fetch_pending_hashes`.\n\nFind Peer - find an idle fallback peer for a hash pending fetch.\n\nFill Request - fill `GetPooledTransactions` request, for the found peer, with more hashes from cache of hashes pending fetch. ",
         "fieldConfig": {
@@ -2950,7 +2950,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -2967,7 +2967,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -2988,7 +2988,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "Frequency of transaction types seen in announcements",
         "fieldConfig": {
@@ -3070,7 +3070,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -3087,7 +3087,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -3104,7 +3104,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -3121,7 +3121,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -3156,7 +3156,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "The number of tracked peers in the discovery modules (dnsdisc and discv4)",
         "fieldConfig": {
@@ -3237,7 +3237,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_tracked_peers{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -3252,7 +3252,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "The number of incoming and outgoing connections, as well as the number of peers we are currently connected to. Outgoing and incoming connections also count peers we are trying to connect to.",
         "fieldConfig": {
@@ -3333,7 +3333,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_pending_outgoing_connections{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -3344,7 +3344,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_outgoing_connections{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -3355,7 +3355,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_total_pending_connections{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -3366,7 +3366,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_incoming_connections{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -3378,7 +3378,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_connected_peers{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -3394,7 +3394,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "Internal errors in the P2P module. These are expected to happen from time to time. High error rates should not cause alarm if the node is peering otherwise.",
         "fieldConfig": {
@@ -3480,7 +3480,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "rate(reth_p2pstream_disconnected_errors{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}[$__rate_interval])",
@@ -3491,7 +3491,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "rate(reth_network_pending_session_failures{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}[$__rate_interval])",
@@ -3503,7 +3503,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "rate(reth_network_invalid_messages_received_total{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}[$__rate_interval])",
@@ -3519,7 +3519,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -3568,7 +3568,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_useless_peer{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -3579,7 +3579,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_subprotocol_specific{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -3591,7 +3591,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_already_connected{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -3603,7 +3603,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_client_quitting{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -3615,7 +3615,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_unexpected_identity{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -3627,7 +3627,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_disconnect_requested{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -3639,7 +3639,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_null_node_identity{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -3651,7 +3651,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_tcp_subsystem_error{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -3663,7 +3663,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_incompatible{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -3675,7 +3675,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_protocol_breach{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -3687,7 +3687,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_too_many_peers{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
@@ -3703,7 +3703,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
+          "uid": "grafanacloud-prom"
         },
         "description": "Number of successful outgoing dial attempts.",
         "fieldConfig": {
@@ -3784,7 +3784,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "PBFA97CFB590B2093"
+              "uid": "grafanacloud-prom"
             },
             "editorMode": "builder",
             "expr": "reth_network_total_dial_successes{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
