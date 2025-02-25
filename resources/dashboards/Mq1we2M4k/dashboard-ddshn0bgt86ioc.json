@@ -44,7 +44,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -126,7 +126,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -146,7 +146,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -228,7 +228,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -244,7 +244,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -265,7 +265,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -347,7 +347,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -363,7 +363,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -385,7 +385,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -467,7 +467,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -487,7 +487,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -569,7 +569,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -589,7 +589,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "description": "",
         "fieldConfig": {
@@ -649,7 +649,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -684,7 +684,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "description": "",
         "fieldConfig": {
@@ -767,7 +767,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -783,7 +783,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -804,7 +804,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "description": "TODO: batcher_tx_total is 2x txs sent b/c of bug. See https://github.com/ethereum-optimism/optimism/pull/11438",
         "fieldConfig": {
@@ -887,7 +887,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -903,7 +903,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -920,7 +920,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -941,7 +941,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "description": "",
         "fieldConfig": {
@@ -1024,7 +1024,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1044,7 +1044,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "description": "",
         "fieldConfig": {
@@ -1127,7 +1127,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1160,7 +1160,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -1216,7 +1216,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1236,7 +1236,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -1292,7 +1292,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1312,7 +1312,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -1368,7 +1368,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1388,7 +1388,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -1483,7 +1483,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1503,7 +1503,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -1559,7 +1559,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1579,7 +1579,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -1635,7 +1635,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1655,7 +1655,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -1711,7 +1711,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1744,7 +1744,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -1805,7 +1805,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1825,7 +1825,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -1886,7 +1886,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -1906,7 +1906,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "fieldConfig": {
           "defaults": {
@@ -2001,7 +2001,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
@@ -2021,7 +2021,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "Prometheus"
+          "uid": "grafanacloud-prom"
         },
         "description": "",
         "fieldConfig": {
@@ -2116,7 +2116,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "Prometheus"
+              "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
             "editorMode": "builder",
