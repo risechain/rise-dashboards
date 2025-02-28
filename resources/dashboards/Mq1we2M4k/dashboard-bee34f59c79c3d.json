@@ -93,7 +93,7 @@
           "textMode": "name",
           "wideLayout": true
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -163,7 +163,7 @@
           "textMode": "name",
           "wideLayout": true
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -233,7 +233,7 @@
           "textMode": "name",
           "wideLayout": true
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -303,7 +303,7 @@
           "textMode": "name",
           "wideLayout": true
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -373,7 +373,7 @@
           "textMode": "name",
           "wideLayout": true
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -443,7 +443,7 @@
           "textMode": "name",
           "wideLayout": true
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -554,11 +554,12 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -708,11 +709,12 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -866,11 +868,12 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -1019,11 +1022,12 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -1165,11 +1169,12 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "multi",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -1244,6 +1249,255 @@
           "type": "prometheus",
           "uid": "grafanacloud-prom"
         },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "barWidthFactor": 0.6,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 1,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "displayName": "Tx Pool Basefee",
+            "fieldMinMax": true,
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 21
+        },
+        "id": 220,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "tooltip": {
+            "hideZeros": false,
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "11.5.2",
+        "targets": [
+          {
+            "disableTextWrap": false,
+            "editorMode": "builder",
+            "expr": "reth_transaction_pool_base_fee",
+            "fullMetaSearch": false,
+            "includeNullMetadata": true,
+            "legendFormat": "__auto",
+            "range": true,
+            "refId": "A",
+            "useBackend": false
+          }
+        ],
+        "title": "Tx Pool base fee",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "grafanacloud-prom"
+        },
+        "description": "Tracks the number of incoming transaction messages in the channel from the network to the transaction pool.\n\nMempool messages sent over this channel are `GetPooledTransactions` requests, `NewPooledTransactionHashes` announcements (gossip), and `Transactions` (gossip)\n\nTx - `NetworkManager`\n\\nRx - `TransactionsManager`",
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": true,
+              "axisColorMode": "text",
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "barWidthFactor": 0.6,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 1,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "mps"
+          },
+          "overrides": [
+            {
+              "matcher": {
+                "id": "byFrameRefID",
+                "options": "B"
+              },
+              "properties": [
+                {
+                  "id": "custom.transform",
+                  "value": "negative-Y"
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byFrameRefID",
+                "options": "C"
+              },
+              "properties": [
+                {
+                  "id": "unit",
+                  "value": "events"
+                }
+              ]
+            }
+          ]
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 29
+        },
+        "id": 95,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "tooltip": {
+            "hideZeros": false,
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "11.5.2",
+        "targets": [
+          {
+            "datasource": {
+              "type": "prometheus",
+              "uid": "grafanacloud-prom"
+            },
+            "editorMode": "builder",
+            "expr": "rate(reth_network_pool_transactions_messages_sent_total{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}[$__rate_interval])",
+            "hide": false,
+            "instant": false,
+            "legendFormat": "Tx",
+            "range": true,
+            "refId": "A"
+          },
+          {
+            "datasource": {
+              "type": "prometheus",
+              "uid": "grafanacloud-prom"
+            },
+            "editorMode": "builder",
+            "expr": "rate(reth_network_pool_transactions_messages_received_total{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}[$__rate_interval])",
+            "hide": false,
+            "legendFormat": "Rx",
+            "range": true,
+            "refId": "B"
+          },
+          {
+            "datasource": {
+              "type": "prometheus",
+              "uid": "grafanacloud-prom"
+            },
+            "editorMode": "code",
+            "expr": "reth_network_pool_transactions_messages_sent_total{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"} - reth_network_pool_transactions_messages_received_total{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
+            "hide": false,
+            "legendFormat": "Messages in Channel",
+            "range": true,
+            "refId": "C"
+          }
+        ],
+        "title": "Incoming Gossip and Requests",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "grafanacloud-prom"
+        },
         "description": "Number of transactions about to be imported into the pool.",
         "fieldConfig": {
           "defaults": {
@@ -1304,7 +1558,7 @@
           "h": 8,
           "w": 12,
           "x": 12,
-          "y": 21
+          "y": 29
         },
         "id": 94,
         "options": {
@@ -1315,11 +1569,12 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -1335,256 +1590,6 @@
           }
         ],
         "title": "Pending Pool Imports",
-        "type": "timeseries"
-      },
-      {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "grafanacloud-prom"
-        },
-        "description": "Tracks the number of incoming transaction messages in the channel from the network to the transaction pool.\n\nMempool messages sent over this channel are `GetPooledTransactions` requests, `NewPooledTransactionHashes` announcements (gossip), and `Transactions` (gossip)\n\nTx - `NetworkManager`\n\\nRx - `TransactionsManager`",
-        "fieldConfig": {
-          "defaults": {
-            "color": {
-              "mode": "palette-classic"
-            },
-            "custom": {
-              "axisBorderShow": false,
-              "axisCenteredZero": true,
-              "axisColorMode": "text",
-              "axisLabel": "",
-              "axisPlacement": "auto",
-              "barAlignment": 0,
-              "barWidthFactor": 0.6,
-              "drawStyle": "line",
-              "fillOpacity": 0,
-              "gradientMode": "none",
-              "hideFrom": {
-                "legend": false,
-                "tooltip": false,
-                "viz": false
-              },
-              "insertNulls": false,
-              "lineInterpolation": "linear",
-              "lineWidth": 1,
-              "pointSize": 5,
-              "scaleDistribution": {
-                "type": "linear"
-              },
-              "showPoints": "auto",
-              "spanNulls": false,
-              "stacking": {
-                "group": "A",
-                "mode": "none"
-              },
-              "thresholdsStyle": {
-                "mode": "off"
-              }
-            },
-            "mappings": [],
-            "thresholds": {
-              "mode": "absolute",
-              "steps": [
-                {
-                  "color": "green"
-                },
-                {
-                  "color": "red",
-                  "value": 80
-                }
-              ]
-            },
-            "unit": "mps"
-          },
-          "overrides": [
-            {
-              "matcher": {
-                "id": "byFrameRefID",
-                "options": "B"
-              },
-              "properties": [
-                {
-                  "id": "custom.transform",
-                  "value": "negative-Y"
-                }
-              ]
-            },
-            {
-              "matcher": {
-                "id": "byFrameRefID",
-                "options": "C"
-              },
-              "properties": [
-                {
-                  "id": "unit",
-                  "value": "events"
-                }
-              ]
-            }
-          ]
-        },
-        "gridPos": {
-          "h": 8,
-          "w": 12,
-          "x": 0,
-          "y": 29
-        },
-        "id": 95,
-        "options": {
-          "legend": {
-            "calcs": [],
-            "displayMode": "list",
-            "placement": "bottom",
-            "showLegend": true
-          },
-          "tooltip": {
-            "mode": "single",
-            "sort": "none"
-          }
-        },
-        "pluginVersion": "11.3.0",
-        "targets": [
-          {
-            "datasource": {
-              "type": "prometheus",
-              "uid": "grafanacloud-prom"
-            },
-            "editorMode": "builder",
-            "expr": "rate(reth_network_pool_transactions_messages_sent_total{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}[$__rate_interval])",
-            "hide": false,
-            "instant": false,
-            "legendFormat": "Tx",
-            "range": true,
-            "refId": "A"
-          },
-          {
-            "datasource": {
-              "type": "prometheus",
-              "uid": "grafanacloud-prom"
-            },
-            "editorMode": "builder",
-            "expr": "rate(reth_network_pool_transactions_messages_received_total{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}[$__rate_interval])",
-            "hide": false,
-            "legendFormat": "Rx",
-            "range": true,
-            "refId": "B"
-          },
-          {
-            "datasource": {
-              "type": "prometheus",
-              "uid": "grafanacloud-prom"
-            },
-            "editorMode": "code",
-            "expr": "reth_network_pool_transactions_messages_sent_total{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"} - reth_network_pool_transactions_messages_received_total{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
-            "hide": false,
-            "legendFormat": "Messages in Channel",
-            "range": true,
-            "refId": "C"
-          }
-        ],
-        "title": "Incoming Gossip and Requests",
-        "type": "timeseries"
-      },
-      {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "grafanacloud-prom"
-        },
-        "description": "Measures the message send rate (MPS) for queued outgoing messages. Outgoing messages are added to the queue before being sent to other peers, and this metric helps track the rate of message dispatch.",
-        "fieldConfig": {
-          "defaults": {
-            "color": {
-              "mode": "palette-classic"
-            },
-            "custom": {
-              "axisBorderShow": false,
-              "axisCenteredZero": false,
-              "axisColorMode": "text",
-              "axisLabel": "",
-              "axisPlacement": "auto",
-              "barAlignment": 0,
-              "barWidthFactor": 0.6,
-              "drawStyle": "line",
-              "fillOpacity": 0,
-              "gradientMode": "none",
-              "hideFrom": {
-                "legend": false,
-                "tooltip": false,
-                "viz": false
-              },
-              "insertNulls": false,
-              "lineInterpolation": "linear",
-              "lineWidth": 1,
-              "pointSize": 5,
-              "scaleDistribution": {
-                "type": "linear"
-              },
-              "showPoints": "auto",
-              "spanNulls": false,
-              "stacking": {
-                "group": "A",
-                "mode": "none"
-              },
-              "thresholdsStyle": {
-                "mode": "off"
-              }
-            },
-            "mappings": [],
-            "thresholds": {
-              "mode": "absolute",
-              "steps": [
-                {
-                  "color": "green"
-                },
-                {
-                  "color": "red",
-                  "value": 80
-                }
-              ]
-            },
-            "unit": "mps"
-          },
-          "overrides": []
-        },
-        "gridPos": {
-          "h": 8,
-          "w": 12,
-          "x": 12,
-          "y": 29
-        },
-        "id": 219,
-        "options": {
-          "legend": {
-            "calcs": [],
-            "displayMode": "list",
-            "placement": "bottom",
-            "showLegend": true
-          },
-          "tooltip": {
-            "mode": "single",
-            "sort": "none"
-          }
-        },
-        "pluginVersion": "11.3.0",
-        "targets": [
-          {
-            "datasource": {
-              "type": "prometheus",
-              "uid": "grafanacloud-prom"
-            },
-            "disableTextWrap": false,
-            "editorMode": "builder",
-            "expr": "rate(reth_network_queued_outgoing_messages{job=\"op-el-1-op-reth-op-node-rise-kurtosis\"}[$__rate_interval])",
-            "fullMetaSearch": false,
-            "includeNullMetadata": true,
-            "instant": false,
-            "legendFormat": "Queued Messages per Second",
-            "range": true,
-            "refId": "A",
-            "useBackend": false
-          }
-        ],
-        "title": "Queued Outgoing Messages",
         "type": "timeseries"
       },
       {
@@ -1636,7 +1641,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -1687,11 +1693,12 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -1769,7 +1776,7 @@
           "type": "prometheus",
           "uid": "grafanacloud-prom"
         },
-        "description": "Egress RLPx capability traffic (default only `eth` capability)\n\nDropped - session channels are bounded, if there's no capacity, the message will be dropped.",
+        "description": "Measures the message send rate (MPS) for queued outgoing messages. Outgoing messages are added to the queue before being sent to other peers, and this metric helps track the rate of message dispatch.",
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -1813,7 +1820,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -1831,7 +1839,7 @@
           "x": 12,
           "y": 37
         },
-        "id": 217,
+        "id": 219,
         "options": {
           "legend": {
             "calcs": [],
@@ -1840,11 +1848,12 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -1853,17 +1862,17 @@
             },
             "disableTextWrap": false,
             "editorMode": "builder",
-            "expr": "rate(reth_network_total_outgoing_peer_messages_dropped{job=\"op-el-1-op-reth-op-node-rise-kurtosis\"}[$__rate_interval])",
+            "expr": "rate(reth_network_queued_outgoing_messages{job=\"op-el-1-op-reth-op-node-rise-kurtosis\"}[$__rate_interval])",
             "fullMetaSearch": false,
             "includeNullMetadata": true,
             "instant": false,
-            "legendFormat": "Dropped",
+            "legendFormat": "Queued Messages per Second",
             "range": true,
             "refId": "A",
             "useBackend": false
           }
         ],
-        "title": "Outgoing Capability Messages",
+        "title": "Queued Outgoing Messages",
         "type": "timeseries"
       },
       {
@@ -1915,7 +1924,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -1942,11 +1952,12 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -1991,7 +2002,7 @@
           "type": "prometheus",
           "uid": "grafanacloud-prom"
         },
-        "description": "Currently active outgoing GetPooledTransactions requests.",
+        "description": "Egress RLPx capability traffic (default only `eth` capability)\n\nDropped - session channels are bounded, if there's no capacity, the message will be dropped.",
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -2035,14 +2046,16 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
                   "value": 80
                 }
               ]
-            }
+            },
+            "unit": "mps"
           },
           "overrides": []
         },
@@ -2052,7 +2065,7 @@
           "x": 12,
           "y": 45
         },
-        "id": 104,
+        "id": 217,
         "options": {
           "legend": {
             "calcs": [],
@@ -2061,26 +2074,31 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
               "type": "prometheus",
               "uid": "grafanacloud-prom"
             },
+            "disableTextWrap": false,
             "editorMode": "builder",
-            "expr": "reth_network_inflight_transaction_requests{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
-            "hide": false,
-            "legendFormat": "Inflight Transaction Requests",
+            "expr": "rate(reth_network_total_outgoing_peer_messages_dropped{job=\"op-el-1-op-reth-op-node-rise-kurtosis\"}[$__rate_interval])",
+            "fullMetaSearch": false,
+            "includeNullMetadata": true,
+            "instant": false,
+            "legendFormat": "Dropped",
             "range": true,
-            "refId": "C"
+            "refId": "A",
+            "useBackend": false
           }
         ],
-        "title": "Inflight Transaction Requests",
+        "title": "Outgoing Capability Messages",
         "type": "timeseries"
       },
       {
@@ -2132,7 +2150,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -2159,11 +2178,12 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -2311,7 +2331,7 @@
           "type": "prometheus",
           "uid": "grafanacloud-prom"
         },
-        "description": "",
+        "description": "Currently active outgoing GetPooledTransactions requests.",
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -2355,7 +2375,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -2372,7 +2393,7 @@
           "x": 12,
           "y": 53
         },
-        "id": 199,
+        "id": 104,
         "options": {
           "legend": {
             "calcs": [],
@@ -2381,60 +2402,27 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
               "type": "prometheus",
               "uid": "grafanacloud-prom"
             },
-            "disableTextWrap": false,
-            "editorMode": "code",
-            "expr": "reth_network_hashes_pending_fetch{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
-            "fullMetaSearch": false,
-            "includeNullMetadata": true,
-            "instant": false,
-            "legendFormat": "Hashes in Pending Fetch Cache",
-            "range": true,
-            "refId": "A",
-            "useBackend": false
-          },
-          {
-            "datasource": {
-              "type": "prometheus",
-              "uid": "grafanacloud-prom"
-            },
-            "disableTextWrap": false,
-            "editorMode": "code",
-            "expr": "reth_network_hashes_inflight_transaction_requests{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
-            "fullMetaSearch": false,
+            "editorMode": "builder",
+            "expr": "reth_network_inflight_transaction_requests{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
             "hide": false,
-            "includeNullMetadata": true,
-            "instant": false,
-            "legendFormat": "Hashes in Inflight Requests",
-            "range": true,
-            "refId": "B",
-            "useBackend": false
-          },
-          {
-            "datasource": {
-              "type": "prometheus",
-              "uid": "grafanacloud-prom"
-            },
-            "editorMode": "code",
-            "expr": "sum(reth_network_hashes_inflight_transaction_requests{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}) + sum(reth_network_hashes_pending_fetch{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"})",
-            "hide": false,
-            "instant": false,
-            "legendFormat": "Total Hashes in Transaction Fetcher",
+            "legendFormat": "Inflight Transaction Requests",
             "range": true,
             "refId": "C"
           }
         ],
-        "title": "Transaction Fetcher Hashes",
+        "title": "Inflight Transaction Requests",
         "type": "timeseries"
       },
       {
@@ -2486,7 +2474,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -2513,11 +2502,12 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -2579,7 +2569,7 @@
           "type": "prometheus",
           "uid": "grafanacloud-prom"
         },
-        "description": "Frequency of a peer sending a transaction that has already been marked as seen by that peer. This could for example be the case if a transaction is sent/announced to the peer at the same time that the peer sends/announces the same transaction to us.\n\nThis reflects the latency in the mempool.",
+        "description": "",
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -2623,15 +2613,15 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
                   "value": 80
                 }
               ]
-            },
-            "unit": "cps"
+            }
           },
           "overrides": []
         },
@@ -2641,7 +2631,7 @@
           "x": 12,
           "y": 61
         },
-        "id": 208,
+        "id": 199,
         "options": {
           "legend": {
             "calcs": [],
@@ -2650,11 +2640,12 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -2662,13 +2653,12 @@
               "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
-            "editorMode": "builder",
-            "expr": "rate(reth_network_occurrences_hash_already_seen_by_peer{job=\"op-el-1-op-reth-op-node-rise-kurtosis\"}[$__rate_interval])",
+            "editorMode": "code",
+            "expr": "reth_network_hashes_pending_fetch{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
             "fullMetaSearch": false,
-            "hide": false,
-            "includeNullMetadata": false,
+            "includeNullMetadata": true,
             "instant": false,
-            "legendFormat": "Freq Announced Transactions Already Seen by Peer",
+            "legendFormat": "Hashes in Pending Fetch Cache",
             "range": true,
             "refId": "A",
             "useBackend": false
@@ -2679,19 +2669,32 @@
               "uid": "grafanacloud-prom"
             },
             "disableTextWrap": false,
-            "editorMode": "builder",
-            "expr": "rate(reth_network_occurrences_of_transaction_already_seen_by_peer{job=\"op-el-1-op-reth-op-node-rise-kurtosis\"}[$__rate_interval])",
+            "editorMode": "code",
+            "expr": "reth_network_hashes_inflight_transaction_requests{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
             "fullMetaSearch": false,
             "hide": false,
-            "includeNullMetadata": false,
+            "includeNullMetadata": true,
             "instant": false,
-            "legendFormat": "Freq Received Transactions Already Seen by Peer",
+            "legendFormat": "Hashes in Inflight Requests",
             "range": true,
             "refId": "B",
             "useBackend": false
+          },
+          {
+            "datasource": {
+              "type": "prometheus",
+              "uid": "grafanacloud-prom"
+            },
+            "editorMode": "code",
+            "expr": "sum(reth_network_hashes_inflight_transaction_requests{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"}) + sum(reth_network_hashes_pending_fetch{job=~\"op-el-1-op-reth-op-node-rise-kurtosis\"})",
+            "hide": false,
+            "instant": false,
+            "legendFormat": "Total Hashes in Transaction Fetcher",
+            "range": true,
+            "refId": "C"
           }
         ],
-        "title": "Frequency of Transactions Already Marked as Seen by Peer",
+        "title": "Transaction Fetcher Hashes",
         "type": "timeseries"
       },
       {
@@ -2743,7 +2746,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -2770,11 +2774,12 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -2870,7 +2875,7 @@
           "type": "prometheus",
           "uid": "grafanacloud-prom"
         },
-        "description": "Duration of one call to `TransactionFetcher::on_fetch_pending_hashes`.\n\nFind Peer - find an idle fallback peer for a hash pending fetch.\n\nFill Request - fill `GetPooledTransactions` request, for the found peer, with more hashes from cache of hashes pending fetch. ",
+        "description": "Frequency of a peer sending a transaction that has already been marked as seen by that peer. This could for example be the case if a transaction is sent/announced to the peer at the same time that the peer sends/announces the same transaction to us.\n\nThis reflects the latency in the mempool.",
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -2914,7 +2919,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -2922,7 +2928,7 @@
                 }
               ]
             },
-            "unit": "s"
+            "unit": "cps"
           },
           "overrides": []
         },
@@ -2932,7 +2938,7 @@
           "x": 12,
           "y": 69
         },
-        "id": 215,
+        "id": 208,
         "options": {
           "legend": {
             "calcs": [],
@@ -2941,11 +2947,12 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -2954,14 +2961,14 @@
             },
             "disableTextWrap": false,
             "editorMode": "builder",
-            "expr": "reth_network_duration_find_idle_fallback_peer_for_any_pending_hash{job=\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
+            "expr": "rate(reth_network_occurrences_hash_already_seen_by_peer{job=\"op-el-1-op-reth-op-node-rise-kurtosis\"}[$__rate_interval])",
             "fullMetaSearch": false,
             "hide": false,
-            "includeNullMetadata": true,
+            "includeNullMetadata": false,
             "instant": false,
-            "legendFormat": "Find Idle Peer",
+            "legendFormat": "Freq Announced Transactions Already Seen by Peer",
             "range": true,
-            "refId": "C",
+            "refId": "A",
             "useBackend": false
           },
           {
@@ -2971,18 +2978,18 @@
             },
             "disableTextWrap": false,
             "editorMode": "builder",
-            "expr": "reth_network_duration_fill_request_from_hashes_pending_fetch{job=\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
+            "expr": "rate(reth_network_occurrences_of_transaction_already_seen_by_peer{job=\"op-el-1-op-reth-op-node-rise-kurtosis\"}[$__rate_interval])",
             "fullMetaSearch": false,
             "hide": false,
-            "includeNullMetadata": true,
+            "includeNullMetadata": false,
             "instant": false,
-            "legendFormat": "Fill Request",
+            "legendFormat": "Freq Received Transactions Already Seen by Peer",
             "range": true,
             "refId": "B",
             "useBackend": false
           }
         ],
-        "title": "Fetch Hashes Pending Fetch Duration",
+        "title": "Frequency of Transactions Already Marked as Seen by Peer",
         "type": "timeseries"
       },
       {
@@ -3034,7 +3041,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -3061,11 +3069,12 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -3140,6 +3149,128 @@
         "type": "timeseries"
       },
       {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "grafanacloud-prom"
+        },
+        "description": "Duration of one call to `TransactionFetcher::on_fetch_pending_hashes`.\n\nFind Peer - find an idle fallback peer for a hash pending fetch.\n\nFill Request - fill `GetPooledTransactions` request, for the found peer, with more hashes from cache of hashes pending fetch. ",
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "barWidthFactor": 0.6,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 1,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "s"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 77
+        },
+        "id": 215,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "tooltip": {
+            "hideZeros": false,
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "11.5.2",
+        "targets": [
+          {
+            "datasource": {
+              "type": "prometheus",
+              "uid": "grafanacloud-prom"
+            },
+            "disableTextWrap": false,
+            "editorMode": "builder",
+            "expr": "reth_network_duration_find_idle_fallback_peer_for_any_pending_hash{job=\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
+            "fullMetaSearch": false,
+            "hide": false,
+            "includeNullMetadata": true,
+            "instant": false,
+            "legendFormat": "Find Idle Peer",
+            "range": true,
+            "refId": "C",
+            "useBackend": false
+          },
+          {
+            "datasource": {
+              "type": "prometheus",
+              "uid": "grafanacloud-prom"
+            },
+            "disableTextWrap": false,
+            "editorMode": "builder",
+            "expr": "reth_network_duration_fill_request_from_hashes_pending_fetch{job=\"op-el-1-op-reth-op-node-rise-kurtosis\"}",
+            "fullMetaSearch": false,
+            "hide": false,
+            "includeNullMetadata": true,
+            "instant": false,
+            "legendFormat": "Fill Request",
+            "range": true,
+            "refId": "B",
+            "useBackend": false
+          }
+        ],
+        "title": "Fetch Hashes Pending Fetch Duration",
+        "type": "timeseries"
+      },
+      {
         "collapsed": false,
         "gridPos": {
           "h": 1,
@@ -3202,7 +3333,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -3228,11 +3360,12 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -3298,7 +3431,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -3324,11 +3458,12 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "multi",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -3441,7 +3576,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -3471,11 +3607,12 @@
             ]
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "multi",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -3749,7 +3886,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -3775,11 +3913,12 @@
             "showLegend": true
           },
           "tooltip": {
+            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "11.3.0",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "datasource": {
@@ -3812,7 +3951,7 @@
     "timezone": "",
     "title": "reth-l2-mempool",
     "uid": "bee34f59c79c3d",
-    "version": 3,
+    "version": 1,
     "weekStart": ""
   }
 }
